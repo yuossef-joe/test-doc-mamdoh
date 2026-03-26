@@ -20,7 +20,7 @@ interface HeroSectionProps {
 export default function HeroSection({
   title = "Expert Care for Every Stage of",
   subtitle = "Comprehensive, compassionate, and advanced obstetric and gynecological care tailored to your unique health journey.",
-  imageUrl = "/images/doctor.png",
+  imageUrl = "/images/ultrasound.gif",
 }: HeroSectionProps) {
   return (
     <section className="relative overflow-hidden bg-white pb-20 pt-10 lg:pb-28 lg:pt-20">
@@ -64,7 +64,7 @@ export default function HeroSection({
               <Button
                 size="lg"
                 variant="outline"
-                className="w-full border-border bg-white text-text-primary transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/30 hover:bg-white hover:text-text-primary hover:shadow-md sm:w-auto">
+                className="w-full border-border bg-white text-primary transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/30 hover:bg-white hover:text-text-primary hover:shadow-md sm:w-auto">
                 Patient Portal Login
               </Button>
             </Link>
@@ -94,12 +94,13 @@ export default function HeroSection({
 
           <div className="relative">
             <Image
-              src={""}
+              src={imageUrl}
               alt="Prof. Mohamed Mamdouh Saleh"
               width={1000}
               height={1000}
               className="relative z-10 h-auto w-full rounded-[2.5rem] object-cover object-top shadow-xl ring-1 ring-black/[0.04]"
               priority
+              unoptimized
             />
 
             {/* Floating card — Happy Patients */}
